@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 133, 111);
+    background-image: url(GameImages/background.png);
+    width: 100%;
+    height: 100vh;
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: 400px 900px;
+    grid-auto-rows: minmax(500px,auto);
+    margin: 0px 40px;
+}
+.box{
+    
+    color: white;  
+}
+.box1{
+    grid-column: 1 / 2;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.7);
+    border-radius: 3px;
+    background-color: rgb(172, 147, 67);
+    background-image: url(GameImages/Small-circles-on-transparent-background-PNG.png);
+    
+}
+.box1 > *{
+    padding: 0px 60px;
+    transform: scale(1.05);
+}
+.box1 > h1{
+    font-size: 34px;
+}
+.box2{
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    align-self: center;
+    gap: 14px;
+    padding: 20px 20px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    
+}
+.img-style{
+    width: 100%;
+    display:block;
+    box-shadow: 0px 3px 10px 0px rgba(0,1,0,0.8);
+    z-index: 1;
+    transition: transform 0.2s ease-in-out;
+}
+.img-style:hover{
+    transform: scale(1.05);
+    
+}
+
+.h5tag{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    float: right;
+}
+.h5tag-discount{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    float: right;
+}
+.discount{
+    padding: 6px 8px;
+    background: rgb(103, 161, 14);
+
+}
+.text{
+    position: absolute;
+    text-transform: uppercase;
+    bottom: -20px;
+    right: 0px;
+
+}
