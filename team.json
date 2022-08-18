@@ -1,0 +1,21 @@
+{
+    "teamName": "ds",
+    "memberGroup" : 4,
+    "names": [
+        {
+            "name": "mengkheang",
+            "age" :  20
+        },
+        {
+            "name": "nha",
+            "age" :  20
+        },
+        {
+            "name": "por",
+            "age" :  21
+        }, {
+            "name": "rith",
+            "age" :  20
+        }
+    ]
+}
